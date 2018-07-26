@@ -164,6 +164,9 @@ input {
     font-size: 2em;
     color: orange;
 }
+.section-follow {
+    height: 60px;
+}
 
 .about-us {
     padding-right: 30px;
