@@ -158,14 +158,7 @@ input {
     padding: 0;
 }
 
-/* .section-search input {
-    padding: 5px ;
-    font-size: 18px ;
-    width: 100% ;
-    border: 3px solid #f4f4f4;
-} */
-
-.section-follow .fa-4x {
+.section-contact .fa-4x {
     margin: 5px 10px;
 }
 
@@ -198,7 +191,8 @@ footer h6 {
 }
 
 .contact-card {
-    width: 98%;
+    margin: 0 auto;
+    width: 75%;
 }
 
 #top span {
