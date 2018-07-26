@@ -24,8 +24,18 @@ html,body {
 }
 
 .company-name {
-    padding-left: 20px;
+    font-size: 50px;
+    color: orange;
+}
 
+.company-name:hover {
+    text-decoration: none;
+    color: rgb(97, 125, 138);
+}
+
+.fa-bed {
+    color: rgb(97, 125, 138);
+    padding-right: 5px;
 }
 
 nav ul li a {
@@ -135,12 +145,12 @@ input {
     width: 100%;
 }
 
-/* .results-header {
+.results-header {
     width: 100%;
     margin: 0;
     padding-top: 10px;
     position: absolute;
-} */
+}
 
 .section-contact {
     width: 100%;
@@ -184,6 +194,7 @@ footer h6 {
 
 .materialboxed {
     display: inline;
+    width: 150px;
 }
 
 .contact-card {
@@ -213,6 +224,12 @@ footer h6 {
     .btn {
         padding: 8px;
     }
+
+    .company-name {
+        display: inline-block;
+        margin-left: 40px;
+    }
+
 }
 
 @media screen and (min-width: 720px){ 
@@ -241,4 +258,9 @@ footer h6 {
      .btn {
          padding: 8px;
      }
+
+     .company-name {
+        display: inline-block;
+        margin-left: 40px;
+    }
  }
