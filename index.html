@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <!-- Google and FontAwesome -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!-- Materialize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <!-- personal style file -->
+    <link rel="stylesheet" href="styles/index.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Odmor</title>
+</head>
+<body id="home" class="scrollspy">
+<span id="top"></span>
+    <!-- Top nav bar - fixed -->
+    <div>
+    <nav class="navbar-fixed white">
+        <a href="#top" class="company-name"><img src="images/logo.jpg" alt="Odmor"></a>
+        <a href="#" data-target="mobile-nav" class="sidenav-trigger">
+            <i class="fas fa-bars"></i></a>
+        <ul class="right hide-on-med-and-down top-menu">
+            <li>
+                <a href="#search">Search</a>
+            </li>
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Side nav bar slider -->
+    <ul class="sidenav" id="mobile-nav">
+        <li>
+            <a href="#search">Search</a>
+        </li>
+        <li>
+            <a href="#about">About</a>
+        </li>
+        <li>
+            <a href="#contact">Contact</a>
+        </li>
+    </ul>
+</div>
+
+    <!-- Section: carousel -->
+    <div class="carousel carousel-slider"><a name="home">
+
+        <a class="carousel-item" href="#one!"><img src="images/img01a.jpg"></a>
+        
+        <div class="callout callout-container orange-text">
+                <div id="home"><h3>Where Do You Want To Stay?</h3></div>
+
+            <div class="input-field input-one">
+                <input type="text" class="white grey-text autocomplete iput" placeholder="   Italy, Venice, Florence, etc..." data-cityName>
+            </div>
+
+            <div class="input-two">
+                <div class="input-field">
+                    <input type="text" class="datepicker white grey-text iput" placeholder=" yyyy-mn-dy" data-startDate>
+                </div>
+                <div class="input-field">
+                    <input type="text" class="datepicker white grey-text iput" placeholder=" yyyy-mn-dy" data-endDate>
+                </div>
+            </div>
+
+            <div class="input-field input-three">
+                <input type="number" class="white grey-text iput" placeholder="  # In Party">
+            </div>
+
+            <div class="input-four">
+                <a href="" class="btn z-depth-2 waves-effect waves-light orange" data-submit>Let's Go</a>
+                <a href="" class="btn z-depth-2 waves-effect waves-light orange">Reset</a>
+            </div>
+        </div>
+        <a class="carousel-item" href="#two!"><img src="images/img02a.jpg"></a>
+        <a class="carousel-item" href="#three!"><img src="images/img03a.jpg"></a>
+        <a class="carousel-item" href="#four!"><img src="images/img04a.jpg"></a>
+        <a class="carousel-item" href="#five!"><img src="images/img05a.jpg"></a>
+        <a class="carousel-item" href="#six!"><img src="images/img06a.jpg"></a>
+        <a class="carousel-item" href="#seven!"><img src="images/img07a.jpg"></a>
+        <a class="carousel-item" href="#eight!"><img src="images/img08a.jpg"></a>
+        <a class="carousel-item" href="#nine!"><img src="images/img09a.jpg"></a>
+        <a class="carousel-item" href="#ten!"><img src="images/img10a.jpg"></a>
+    </div>
+
+
+    <!-- Section:  Search -->
+    <!-- <section id="search" class="section section-search blue-grey darken-1 white-text center scrollspy">
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <h3>Search Destinations</h3>
+                    <div class="input-field">
+                        <input type="text" class="white grey-text autocomplete" id="autocomplete-input" placeholder="Italy, Venice, Florence, etc...">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Section: Icon Boxes -->
+    <!-- <section class="section section-icons grey lighten-4 center">
+        <div class="row">
+            <div class="col s12 m4">
+                <div class="card-panel black-text">
+                    <i class="material-icons large blue-grey-text">room</i>
+                    <h4>Pick Where</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem, esse?</p>
+                </div>
+            </div>
+            <div class="col s12 m4">
+                <div class="card-panel black-text">
+                    <i class="material-icons large blue-grey-text">store</i>
+                    <h4>Travel Shop</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem, esse?</p>
+                </div>
+            </div>
+            <div class="col s12 m4">
+                <div class="card-panel black-text">
+                    <i class="material-icons large blue-grey-text">airplanemode_active</i>
+                    <h4>Fly Cheap</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem, esse?</p>
+                </div>
+            </div>
+
+        </div>
+    </section> -->
+
+
+
+        <!-- Section: Data Results -->
+        <!-- <div class="blue-grey darken-2 white-text center">
+            <div class="results-header">
+                <h4>SEARCH RESULTS</h4>
+            </div>
+        </div> -->
+
+
+        <section class="section section-results scrollspy">
+
+            <div class="blue-grey darken-2 white-text center">
+                <div class="row ">
+                    <div class"results-header"><a name="search">
+                        <br>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="container">
+                <div class="row">
+
+                    <div class="col s12 m4 l10">
+                        <div class="card-panel blue-grey white-text center" data-results>
+                            <h5>Search Results</h5>
+                            <hr>
+                            <div class="results-container white grey-text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m4 l2">
+                        <div class="map-container card-panel grey lighten-3">
+                            <div class="map-card white grey-text" data-map>
+                                <h5>Map</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    <!-- Section:  Popular Places -->
+    <!-- <section id="popular" class="section section-popular scrollspy">
+        <div class="container">
+                <h4 class="center above">
+                    <span class="blue-grey-text">Popular</span>
+                    Places</h4>
+            <div class="row">
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="images/img01.jpg" alt="">
+                            <span class="card-title">Venice, Italy</span>
+                        </div>
+                        <div class="card-content black-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse beatae sapiente, dolores laborum molestiae omnis?
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="images/img02.jpg" alt="">
+                            <span class="card-title">Nova Scotia, Canada</span>
+                        </div>
+                        <div class="card-content black-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse beatae sapiente, dolores laborum molestiae omnis?
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="images/img03.jpg" alt="">
+                            <span class="card-title">Paola, Kansas</span>
+                        </div>
+                        <div class="card-content black-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse beatae sapiente, dolores laborum molestiae omnis?
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Section: Follow -->  
+    <section class="section section-follow blue-grey darken-2 white-text center">
+        <div class="container"><a name="about">
+            <div class="row">
+                <div class="col s12">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Contact -->
+    <section class="section section-contact scrollspy">
+        <div class="container">
+            <div class="row">
+                <div class="about-us">
+                    <div class="card-panel white center black-text">
+                        <h1>About the Creators</h1>
+                        <hr>
+                        <img class="materialboxed circle" width="300" src="https://media.licdn.com/dms/image/C4E03AQEzTm-eDRUp_A/profile-displayphoto-shrink_800_800/0?e=1533772800&v=beta&t=YVCmoxAHbhKOWTP4i7lJRlbtZlz48PtqhpCdbBLAmA8">
+                        <br>
+                        <h4>Matthew Freeman</h4>
+                        <a href="https://github.com/matthewfreeman821" class="black-text">
+                                <i class="fab fa-github fa-4x"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/matthewfreeman821" class="black-text">
+                            <i class="fab fa-linkedin fa-4x"></i>
+                        </a>
+                        <hr>
+                        <img class="materialboxed circle" width="300" src="https://static.wixstatic.com/media/098b8c_5cbd555e612c4ea599fe52da5b66f7c8.jpg/v1/fill/w_334,h_353,al_c,q_80,usm_0.66_1.00_0.01/098b8c_5cbd555e612c4ea599fe52da5b66f7c8.webp">
+                        <br>
+                        <h4>Beth D'Amato</h4>
+                        <a href="https://github.com/badamato" class="black-text">
+                                <i class="fab fa-github fa-4x"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/badamato" class="black-text">
+                            <i class="fab fa-linkedin fa-4x"></i>
+                        </a>
+                        <hr>
+                        <img class="materialboxed circle" width="300" src="https://media.licdn.com/dms/image/C5603AQGgQwjJuQUA9A/profile-displayphoto-shrink_200_200/0?e=1533772800&v=beta&t=IKMg7Ls0lTbP7cgQS82nOt3jaXtjxZfz_m2a20RGf24">
+                        <br>
+                        <h4>Bhisma Bakhai</h4>
+                        <a href="https://github.com/Bhisma93" class="black-text">
+                                <i class="fab fa-github fa-4x"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/bhismabakhai/" class="black-text">
+                            <i class="fab fa-linkedin fa-4x"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-card"><a name="contact">
+                    <div class="card-panel center blue-grey white-text">
+                        <h5>Contact us with questions/feedback</h5>
+                        <div class="input-field">
+                            <input type="text" placeholder="Name">
+                        </div>
+                        <div class="input-field">
+                            <input type="text" placeholder="Email">
+                        </div>
+                        <div class="input-field">
+                            <input type="text" placeholder="Phone">
+                        </div>
+                        <div class="input-field">
+                            <textarea class="materialize-textarea" placeholder="Enter Message"></textarea>
+                        </div>
+                        <input class="white text-blue-grey" type="submit" value="Submit" class="btn">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Footer -->
+    <footer class="white">
+        <h6>Odmor&copy; 2018 developed by Bhisma Bakhai, Beth D'Amato, Matt Freeman - DigitalCrafts</h6>
+    </footer>
+
+
+
+
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Materialize -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+    <!-- Google Maps -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5UbM4IbCBvcnvGdbdBZOOjkEEfxpNgYg" async defer></script>
+    <!-- personal script file -->
+    <script src="scripts/index.js"></script>    
+</body>
+</html>
