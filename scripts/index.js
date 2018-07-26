@@ -103,9 +103,15 @@ submitButton.addEventListener('click', function (event) {
     event.preventDefault();
     return main();
 });
+
+
+
 //Initialize side nav
 const sideNav = document.querySelector('.sidenav');
 M.Sidenav.init(sideNav,{});
+
+
+
 // function formSubmit() {
 // var openWeather = {}
 // var amadues = {}
