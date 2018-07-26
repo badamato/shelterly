@@ -159,7 +159,8 @@ input {
 }
 
 .section-contact .fa-4x {
-    margin: 5px 10px;
+    margin: 10px 5px;
+    font-size: 2em;
 }
 
 footer {
@@ -172,7 +173,7 @@ footer {
 footer h6 {
     text-align: center;
     padding-top: 5px;
-    color: grey;
+    color: orange;
 }
 
 .about-us {
@@ -186,8 +187,8 @@ footer h6 {
 }
 
 .materialboxed {
-    display: inline;
-    width: 150px;
+    display: inline-block;
+    width: 120px;
 }
 
 .contact-card {
