@@ -110,30 +110,19 @@ submitButton.addEventListener('click', function (event) {
 const sideNav = document.querySelector('.sidenav');
 M.Sidenav.init(sideNav,{});
 
-M.getIdFromTrigger = function(trigger) {
-    let id = trigger.getAttribute('data-target');
-    if (!id) {
-      id = trigger.getAttribute('href');
-      if (id) {
-        id = id.slice(1);
-      } else {
-        id = '';
-      }
-    }
-    return id;
-  };
 
+// Slider
+const slider = document.querySelector('.slider');
+M.Slider.init(slider, {
+    indicators: false,
+    height: 780,
+    transition: 500,
+    interval: 6000
+});
 
-//Initialize Carousel
-$(document).ready(function(){
-    var carousel_interval = 6000;
-$('.carousel').carousel({
-    fullWidth: true,
-});
-setInterval(function(){
-    $('.carousel').carousel('next');
-}, carousel_interval);
-});
+//Material Boxed
+// const mb = document.querySelectorAll('.materialboxed');
+// M.Materialbox.init(mb, {});
 
 
 //Initialize autocomplete

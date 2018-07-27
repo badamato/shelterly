@@ -62,12 +62,6 @@ nav ul li a:hover {
     color: orange;
 }
 
-@media only screen and (min-width: 993px) {
-    .hidden-nav a.sidenav-close {
-     display: block;
-    }
-  }
-
 .btn {
     padding: 4px;
     background-color: orange;
@@ -77,34 +71,25 @@ nav ul li a:hover {
     background-color: rgb(55, 71, 79);
 }
 
-.callout {
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-    height: 750px;
-    text-align: center;
-    z-index: 10;
-}
+/************CALLOUT***************/
 
 .callout-container {
-    margin: 10% 0;
-    Width: 100%;
-    display: block;
-    align-content: center;
+    position: absolute;
+    height: calc(80vh);
+    margin-top: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 997;
+    top: 0;
+    pointer-events: none;
+    width: 100%;
 }
 
 .callout-container h3 {
-    /* font-size: 60px; */
     font-size: 18px;
     font-weight: 700;
-    -webkit-text-stroke-width: 0.25px;
-    -webkit-text-stroke-color: grey;
-}
-
-.carousel .carousel-item>img {
-    width: 100%;
 }
 
 .callout input.iput {
@@ -166,6 +151,7 @@ input {
     font-size: 2em;
     color: orange;
 }
+
 .section-follow,
 .section-results {
     height: 80px;
@@ -194,6 +180,15 @@ input {
 #map {
     height: 100%;
 }
+
+/*********************MEDIA QUERIES********************/
+
+@media only screen and (min-width: 993px) {
+    .hidden-nav a.sidenav-close {
+     display: block;
+    }
+}
+
 
  @media screen and (min-width: 360px){ 
    .callout-container h3 {
@@ -230,6 +225,8 @@ input {
      }
  }
 
+
+
  @media screen and (min-width: 1200px){ 
     .callout-container h3 {
         font-size: 60px;
@@ -245,6 +242,6 @@ input {
 
      .company-name {
         display: inline-block;
-        margin-left: 40px;
+        margin-left: 20px;
     }
  }
