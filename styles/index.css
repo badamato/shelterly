@@ -71,25 +71,30 @@ nav ul li a:hover {
     background-color: rgb(55, 71, 79);
 }
 
+
 /************CALLOUT***************/
 
 .callout-container {
     position: absolute;
-    height: calc(80vh);
-    margin-top: 64px;
+    min-height: calc(80vh);
+    margin-top: 65px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    z-index: 997;
+    z-index: 0;
     top: 0;
     pointer-events: none;
     width: 100%;
 }
 
-.callout-container h3 {
-    font-size: 18px;
+.callout-header {
+    font-size: 20px;
+    color: #fb8c00;
     font-weight: 700;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 0 20px 0;
 }
 
 .callout input.iput {
@@ -101,22 +106,22 @@ input {
     border-radius: 20%;
 }
 
-.input-one {
-    width: 900px;
+.input-one input {
+    display: flex;
+    min-width: 800px;
     margin: 20px auto;
 }
 
 .input-two {
-    margin: 0 auto;
-    width: 600px;
-    display: inline-block;
+    margin: 0 auto 0 auto;
+    /* min-width: 100%; */
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
-.input-two div {
-    display: inline-block;
+.datepicker {
+    flex: 1;
+    width: 25%;
 }
 
 .input-three {
@@ -127,6 +132,8 @@ input {
 .input-four {
     padding: 10px;
 }
+
+/************CALLOUT END***************/
 
 .map-container {
     width: 500px;
@@ -183,23 +190,42 @@ input {
 
 /*********************MEDIA QUERIES********************/
 
-@media only screen and (min-width: 993px) {
-    .hidden-nav a.sidenav-close {
-     display: block;
-    }
-}
-
 
  @media screen and (min-width: 360px){ 
-   .callout-container h3 {
-       font-size: 24px;
-       padding-top: 17px;
-   }
+
+    .callout-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        z-index: 997;
+        top: 0;
+        pointer-events: none;
+        width: 100%;
+    }
+
+
+   .callout-header {
+        font-size: 25px;
+        text-align: center;
+    }
+
+   .input-one {
+        display: flex;
+        width: 400px;
+        margin: 20px auto 20px auto;
+        border: 3px solid red;
+    }
+
+    .input-one span{
+        margin: 0;
+    }
 
    .callout input.iput {
-    height: 1.2rem;
-    font-size: 12px;
-}
+        height: 1.2rem;
+        font-size: 12px;
+    }
+
     .btn {
         padding: 8px;
     }
@@ -208,6 +234,19 @@ input {
         display: inline-block;
         margin-left: 40px;
     }
+
+    .input-two {
+        display: flex;
+        min-width: 370px;
+    }
+
+
+
+
+
+
+
+
 
 }
 
@@ -225,23 +264,32 @@ input {
      }
  }
 
+ @media only screen and (min-width: 993px) {
+    .hidden-nav a.sidenav-close {
+     display: block;
+    }
+}
 
 
  @media screen and (min-width: 1200px){ 
+
     .callout-container h3 {
         font-size: 60px;
     }
  
     .callout input.iput {
-     height: 3rem;
-     font-size: 18px;
+        height: 3rem;
+        font-size: 18px;
  }
-     .btn {
-         padding: 8px;
-     }
+    .btn {
+        padding: 8px;
+    }
 
-     .company-name {
+    .company-name {
         display: inline-block;
         margin-left: 20px;
     }
+
+
+
  }
