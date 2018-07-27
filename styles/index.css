@@ -48,18 +48,33 @@ nav ul li a:hover {
     background: none;
 }
 
-.sidenav {
-    height: 150px;
-    background: lightgray
-}
-
 .fa-bars {
     color: orange;
 }
 
+.hidden-nav .sidenav {
+    width: 300px;
+    background: white;
+}
+
+.hidden-nav .sidenav a {
+    font-size: 2em;
+    color: orange;
+}
+
+@media only screen and (min-width: 993px) {
+    .hidden-nav a.sidenav-close {
+     display: block;
+    }
+  }
+
 .btn {
     padding: 4px;
     background-color: orange;
+}
+
+.btn:hover {
+    background-color: rgb(55, 71, 79);
 }
 
 .callout {
@@ -140,19 +155,6 @@ input {
     display: flex;
 }
 
-.section-results {
-    padding: 0;
-    font-size: 18px ;
-    width: 100%;
-}
-
-.results-header {
-    width: 100%;
-    margin: 0;
-    padding-top: 10px;
-    position: absolute;
-}
-
 .section-contact {
     width: 100%;
     margin: 5px 10px;
@@ -164,18 +166,9 @@ input {
     font-size: 2em;
     color: orange;
 }
-.section-follow {
-    height: 60px;
-}
-
-.about-us {
-    padding-right: 30px;
-    text-align: center;
-    width: 100%;
-}
-
-.about-us img {
-    vertical-align: middle;
+.section-follow,
+.section-results {
+    height: 80px;
 }
 
 .materialboxed {
@@ -187,9 +180,9 @@ input {
     height: 140px;
 }
 
-.contact-card {
+.section-contact {
     margin: 0 auto;
-    width: 75%;
+    width: 40%;
 }
 
 #top span {

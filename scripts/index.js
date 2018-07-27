@@ -104,42 +104,26 @@ submitButton.addEventListener('click', function (event) {
     return main();
 });
 
-
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 //Initialize side nav
 const sideNav = document.querySelector('.sidenav');
 M.Sidenav.init(sideNav,{});
 
+M.getIdFromTrigger = function(trigger) {
+    let id = trigger.getAttribute('data-target');
+    if (!id) {
+      id = trigger.getAttribute('href');
+      if (id) {
+        id = id.slice(1);
+      } else {
+        id = '';
+      }
+    }
+    return id;
+  };
 
 
-// function formSubmit() {
-// var openWeather = {}
-// var amadues = {}
-// // Get city name
-// // Serialize 
-// // get lon and lat
-// // 1st .then
-// // get other form properties
-// // serialize
-// // get amadaes data
-// // 2nd .then
-// // do stuff with data
-// // return google maps async function
-// // 3rd .then
-// var param = $.serialize(form)
-// var url = baseUrl +  param
-// function async(url, callback) {
-//     console.log('Hello form async!')
-//     callback()
-// }
-// $.get(url)
-//     .then(function(data) {
-//         return $.get()
-//     })
-//     .then()
-//     .then()
-//     .catch()
-// }
 //Initialize Carousel
 $(document).ready(function(){
     var carousel_interval = 6000;
@@ -150,6 +134,8 @@ setInterval(function(){
     $('.carousel').carousel('next');
 }, carousel_interval);
 });
+
+
 //Initialize autocomplete
 const ac = document.querySelector('.autocomplete');
 M.Autocomplete.init(ac, {
@@ -164,16 +150,25 @@ M.Autocomplete.init(ac, {
         "Europe": null
     }
 });
-//Initialize datepicker
-  $(document).ready(function () {
-    $('.datepicker').pickadate({
-      closeOnSelect: true,
-      format: "dd/mm/yyyy"
-    });
-  });
+
+
+// //Initialize datepicker
+//   $(document).ready(function () {
+//     $('.datepicker').pickadate({
+//       closeOnSelect: true,
+//       format: "dd/mm/yyyy"
+//     });
+//   });
+
+
 //Initialize ScrollSpy (smooth scrolling)
 const ss = document.querySelectorAll('.scrollspy');
-M.Scrollspy.init(ss, {});
+M.ScrollSpy.init(ss, {});
+
+
+
+
+//MAP
 var map;
       function initMap(lat, lon) {
         map = new google.maps.Map(document.querySelector('[data-map]'), {
@@ -181,3 +176,4 @@ var map;
           zoom: 8
         });
     };
+

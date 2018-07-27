@@ -24,8 +24,10 @@
 
 
 <!-- Top nav bar - fixed -->
-    <div>
-        <nav class="navbar-fixed white">
+<div class="navbar-fixed">
+    <nav class="white">
+        <div class="container">
+        <div class="nav-wrapper">
             <a href="#" class="company-name"><i class="fas fa-bed"></i>Shelterly</a>
             <a href="#" data-target="mobile-nav" class="sidenav-trigger">
                 <i class="fas fa-bars"></i></a>
@@ -40,21 +42,30 @@
                     <a href="#contact">Contact</a>
                 </li>
             </ul>
-        </nav>
+        </div>
+        </div>
+    </nav>
+</div>
 
 <!-- Side nav bar slider -->
-        <ul class="sidenav" id="mobile-nav">
-            <li>
-                <a href="#search">Search</a>
-            </li>
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-        </ul>
-    </div>
+<div class="hidden-nav">
+    <ul class="sidenav" id="mobile-nav">
+        <li>
+            <a href="#search">Search</a>
+        </li>
+        <li>
+            <a href="#about">About</a>
+        </li>
+        <li>
+            <a href="#contact">Contact</a>
+        </li>
+    </ul>
+    <!-- <a href="#" data-target="slide-out" class="sidenav-trigger button-collapse">
+        <i class="material-icons">Menu</i>
+    </a> -->
+</div>
+
+
 
 <!-- Section: carousel -->
     <div class="carousel carousel-slider"><a name="home">
@@ -98,113 +109,55 @@
     </div>
 
 
-<!-- Section:  Search -->
-<!-- <section id="search" class="section section-search blue-grey darken-1 white-text center scrollspy">
-        <div class="container">
-            <div class="row">
-                <div class="col s12">
-                    <h3>Search Destinations</h3>
-                    <div class="input-field">
-                        <input type="text" class="white grey-text autocomplete" id="autocomplete-input" placeholder="Italy, Venice, Florence, etc...">
-                    </div>
+<!-- Section:  Search for places -->
+    <!-- <section class="section section-results scrollspy">
+        <div class="blue-grey darken-2 white-text center">
+            <div class="row ">
+                <div class="results-header"><a name="search">
                 </div>
             </div>
-        </div>
-</section> -->
+        </div> -->
 
-<!-- Section: Data Results -->
-    <!-- <div class="blue-grey darken-2 white-text center">
-        <div class="results-header">
-            <h4>SEARCH RESULTS</h4>
-        </div>
-</div> -->
-
-
-        <section class="section section-results scrollspy">
-            <div class="blue-grey darken-2 white-text center">
-                <div class="row ">
-                    <div class"results-header"><a name="search">
-                        <br>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="container">
-                <div class="row">
-                    <div class="col s12 m4 l10">
-                        <div class="card-panel blue-grey white-text center" data-results>
-                            <h5>Search Results</h5>
-                            <hr>
-                            <div class="results-container white grey-text">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col s12 m4 l2">
-                        <div class="map-container card-panel grey lighten-3">
-                            <div class="map-card white grey-text" data-map>
-                                <h5>Map</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-<!-- Section:  Popular Places -->
-    <!-- <section id="popular" class="section section-popular scrollspy">
-        <div class="container">
-                <h4 class="center above">
-                    <span class="blue-grey-text">Popular</span>
-                    Places</h4>
-            <div class="row">
-                <div class="col s12 m4">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="images/img01.jpg" alt="">
-                            <span class="card-title">Venice, Italy</span>
-                        </div>
-                        <div class="card-content black-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse beatae sapiente, dolores laborum molestiae omnis?
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col s12 m4">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="images/img02.jpg" alt="">
-                            <span class="card-title">Nova Scotia, Canada</span>
-                        </div>
-                        <div class="card-content black-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse beatae sapiente, dolores laborum molestiae omnis?
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col s12 m4">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="images/img03.jpg" alt="">
-                            <span class="card-title">Paola, Kansas</span>
-                        </div>
-                        <div class="card-content black-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse beatae sapiente, dolores laborum molestiae omnis?
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-<!-- Section: Follow -->
-    <section class="section section-follow blue-grey darken-1 orange-text center">
+<section class="section section-results blue-grey darken-1 orange-text center scrollspy">
         <div class="row">
             <div class="col m4">
-                <h2>Meet The Designers</h2>
+                <h2>SEARCH RESULTS</h2>
             </div>
         </div>
     </section>
+
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m4 l10">
+                <div class="card-panel blue-grey white-text center" data-results>
+                    <h5>Search Results</h5>
+                    <hr>
+                    <div class="results-container white grey-text">
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4 l2">
+                <div class="map-container card-panel grey lighten-3">
+                    <div class="map-card white grey-text" data-map>
+                        <h5>Map</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Section: Follow -->
+<section id="follow" class="section section-follow blue-grey darken-1 orange-text center scrollspy">
+    <div class="row">
+        <div class="col m4">
+            <h2>MEET THE DESIGNERS</h2>
+        </div>
+    </div>
+</section>
+
+
 
 <!-- Section: About -->
 <section class="section section-icons grey lighten-4 center">
@@ -249,48 +202,45 @@
 
 
 <!-- Section: Contact -->
-<section id="contact" class="section section-contact scrollspy">
-    <div class="container">
-        <div class="row">
-        </div>
-        <div class="col s12 m12">
-            <div class="card-panel blue-grey">
+<section class="section section-contact scrollspy">
+    <div class="row">
+        <form class="col s6" action="//formspree.io/bethadamato@gmail.com" method="POST">
+            <div class="card-panel blue-grey darken-2">
             <h5>Please fill out this form</h5>
             <div class="input-field">
-                <input type="text" placeholder="Name">
+                <input type="text" name="name" placeholder="Name">
             </div>
             <div class="input-field">
-                <input type="text" placeholder="Email">
+                <input type="text" name="email" placeholder="Email">
             </div>
             <div class="input-field">
-                <input type="text" placeholder="Phone">
+                <input type="text" name="phone" placeholder="Phone">
             </div>
             <div class="input-field">
-                <textarea class="materialize-textarea" placeholder="Enter Message"></textarea>
+                <textarea class="materialize-textarea" name="message" placeholder="Enter Message"></textarea>
             </div>
             <input type="submit" value="Submit" class="btn">
             </div>
-        </div>
-        </div>
+        </form>
     </div>
 </section>
 
-    <!-- Section: Footer -->
-    <footer class="section blue-grey darken-1 orange-text center">
-        <p class="flow-text">Shelterly &copy; 2018 developed by Bhisma Bakai, Beth D'Amato, Matt Freeman - DigitalCrafts </p>
-    </footer>
+
+<!-- Section: Footer -->
+<footer class="section blue-grey darken-1 orange-text center">
+    <p class="flow-text">Shelterly &copy; 2018 developed by Bhisma Bakai, Beth D'Amato, Matt Freeman - DigitalCrafts </p>
+</footer>
 
 
+<!-- JQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Materialize -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 
+<!-- Google Maps -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5UbM4IbCBvcnvGdbdBZOOjkEEfxpNgYg" async defer></script>
+<!-- personal script file -->
+<script src="scripts/index.js"></script> 
 
-    <!-- JQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- Materialize -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-
-    <!-- Google Maps -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5UbM4IbCBvcnvGdbdBZOOjkEEfxpNgYg" async defer></script>
-    <!-- personal script file -->
-    <script src="scripts/index.js"></script>    
 </body>
 </html>
