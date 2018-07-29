@@ -76,14 +76,14 @@ nav ul li a:hover {
 
 .vertical-center {
     min-height: 100%;
-    min-height: 100vh;
+    min-height: 110vh;
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
     z-index: 779;
-    width: 100%;
     top: 50px;
+    width: 100%;
 }
 
 #input-form {
@@ -92,7 +92,7 @@ nav ul li a:hover {
     text-align: center;
     background-color: rgba(237, 237, 237, 0.5);
     background-color: hsla(0, 0%, 93%, 0.5);
-    width: 600px;
+    /* width: 600px; */
 }
 
 #input-form h2 {
@@ -187,30 +187,13 @@ nav ul li a:hover {
     height: 100%;
 }
 
+.flow-text{
+    font-size: 1.2em;
+}
+
 /*********************MEDIA QUERIES********************/
 
 
 @media screen and (min-width: 360px){ 
-
-    .company-name {
-        display: inline-block;
-        margin-left: 40px;
-    }
-}
-
-@media screen and (min-width: 720px){ 
-
-}
-
-@media only screen and (min-width: 993px) {
-
-    .hidden-nav a.sidenav-close {
-        display: block;
-    }
-}
-
-
-@media screen and (min-width: 1200px){ 
-
 
 }

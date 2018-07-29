@@ -81,46 +81,34 @@
 
     <div class="vertical-center">
         <div class="row">
-            <div class="col-md-4 col-sm-4 col-xs-12">
-                <form id="input-form">
-                    <h2>Where Do You Want To Stay?</h2>
+            <form id="input-form" class="col l6 s4">
+                <h2>Where Do You Want To Stay?</h2>
 
-                    <div class="form-group formone">
-                        <label>LOCATION:</label>
-                        <input type="text" class="white autocomplete iput form-control input-field" id="utilityname" Placeholder="  Italy, Venice, Florence, etc..." data-cityName>
-                    </div>
-                    <label>DATES GOING/RETURNING:</label>
-                    <div class="form-group formtwo">
-                        <!-- <label>DATES GOING/RETURNING:</label> -->
-                        <input type="text" class="white iput form-control input-field" Placeholder="  yyyy-mn-dy" id="dates" data-startDate>
-                        <input type="text" class="white iput form-control input-field" Placeholder="  yyyy-mn-dy" id="dates" data-startDate>
-                    </div>
+                <div class="form-group formone">
+                    <label>LOCATION:</label>
+                    <input type="text" class="white autocomplete iput form-control input-field" id="utilityname" Placeholder="  Italy, Venice, Florence, etc..." data-cityName>
+                </div>
+                <label>DATES GOING/RETURNING:</label>
+                <div class="form-group formtwo">
+                    <input type="text" class="white iput form-control input-field" Placeholder="  yyyy-mn-dy" id="dates" data-startDate>
+                    <input type="text" class="white iput form-control input-field" Placeholder="  yyyy-mn-dy" id="dates" data-startDate>
+                </div>
 
-                    <label>SIZE OF PARTY:</label>
-                    <div class="form-group formthree">
-                        <!-- <label>SIZE OF PARTY:</label> -->
-                        <input type="number" class="white iput input-field" Placeholder="  #" id="party">
-                    </div>
+                <label>SIZE OF PARTY:</label>
+                <div class="form-group formthree">
+                    <input type="number" class="white iput input-field" Placeholder="  #" id="party">
+                </div>
 
-                    <div class="form-group formfour">
-                        <input type="submit" class="btn orange btn-default" value="Let's Go!" id="btn-submit" data-submit>
-                        <input type="reset" class="btn orange btn-default" value="Reset" id="btn-reset">
-                    </div>
-                </form>
-            </div>
+                <div class="form-group formfour">
+                    <input type="submit" class="btn orange btn-default" value="Let's Go!" id="btn-submit" data-submit>
+                    <input type="reset" class="btn orange btn-default" value="Reset" id="btn-reset">
+                </div>
+            </form>
         </div>
     </div>
 </section>
 
-<!-- Section:  Search for places -->
-
-    <!-- <section class="section section-results scrollspy">
-        <div class="blue-grey darken-2 white-text center">
-            <div class="row ">
-                <div class="results-header"><a name="search">
-                </div>
-            </div>
-        </div> -->      
+<!-- Section:  Search for places --> 
 <section class="section section-results blue-grey darken-1 orange-text center scrollspy">
         <div class="row">
             <div class="col m4">
@@ -131,18 +119,17 @@
 
     <div class="container">
         <div class="row">
-            <div class="col s12 m4 l10">
+            <div class="col s12 m4 l2">
                 <div class="card-panel blue-grey white-text center" data-results>
-                    <h5>Search Results</h5>
+                    <h5>Here are your search results:</h5>
                     <hr>
                     <div class="results-container white grey-text">
                     </div>
                 </div>
             </div>
             <div class="col s12 m4 l2">
-                <div class="map-container card-panel grey lighten-3">
-                    <div class="map-card white grey-text" data-map>
-                        <h5>Map</h5>
+                    <div class="map-container card-panel grey lighten-3">
+                        <div class="map-card white grey-text" data-map>
                     </div>
                 </div>
             </div>
@@ -207,7 +194,7 @@
 <!-- Section: Contact -->
 <section class="section section-contact scrollspy">
     <div class="row">
-        <form class="col s6" action="//formspree.io/bethadamato@gmail.com" method="POST">
+        <form class="col s12 m4" action="//formspree.io/bethadamato@gmail.com" method="POST">
             <div class="card-panel blue-grey darken-2">
             <h5>Please fill out this form</h5>
             <div class="input-field">
