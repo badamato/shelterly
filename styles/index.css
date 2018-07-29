@@ -80,6 +80,7 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     position: absolute;
+    z-index: 779;
     width: 100%;
     top: 0;
   }
