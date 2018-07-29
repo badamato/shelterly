@@ -93,41 +93,22 @@ nav ul li a:hover {
     background-color: hsla(0, 0%, 93%, 0.5);
     width: 700px;
   }
-  
-  #carousel-img {
-    height: 100vh;
-    width: 100%;
+
+#input-form label {
+    color: black;
+    font-size: 1em;
+    
+}
+
+.input-form input[type=text].valid {
+    border-bottom: 1px solid red;
+    box-shadow: 0 1px 0 0 #000;
   }
 
-/* .callout-container {
-    min-height: calc(80vh);
-    margin-top: 65px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    top: 0;
-    width: 100%;
-} */
-
-/* .callout-header {
-    font-size: 20px;
-    color: #fb8c00;
-    font-weight: 700;
-    margin: 0 auto;
-    width: 100%;
-    padding: 0 0 20px 0;
-} */
-
-/* .callout input.iput {
-    height: 1.2rem;
-    font-size: 12px;
-} */
-
-.input-field iput {
+/* .input-field iput {
     border-radius: 20%;
     padding: 5px;
-}
+} */
 
 /************CALLOUT END***************/
 

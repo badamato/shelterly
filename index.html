@@ -79,18 +79,6 @@
         <li><img src="images/img09a.jpg"></li>
     </ul>
 
-    <!-- <ul class="slides">
-        <li><img src="images/img01a.jpg"></li>
-        <li><img src="images/img02a.jpg"></li>
-        <li><img src="images/img03a.jpg"></li>
-        <li><img src="images/img04a.jpg"></li>
-        <li><img src="images/img05a.jpg"></li>
-        <li><img src="images/img06a.jpg"></li>
-        <li><img src="images/img07a.jpg"></li>
-        <li><img src="images/img08a.jpg"></li>
-        <li><img src="images/img09a.jpg"></li>
-    </ul> -->
-
     <div class="vertical-center">
         <div class="container-fluid">
             <div class="row">
@@ -98,27 +86,25 @@
                     <form id="input-form">
                         <h2 class="company-name">Where Do You Want To Stay?</h2>
 
-                        <div class="form-group input-field">
-                            <label for="utilityname">LOCATION:</label>
-                            <input type="text" name="unr" class="white grey-text autocomplete iput form-control" id="utilityname" placeholder="Italy, Venice, Florence, etc..." data-cityName>
+                        <div class="form-group one">
+                            <label>LOCATION:</label>
+                            <input type="text" class="white autocomplete iput form-control input-field" id="utilityname" Placeholder="  Italy, Venice, Florence, etc..." data-cityName>
                         </div>
 
-                        <div class="form-group">
-                            <div class="input-field">
-                            <label for="dates">DATES GOING/RETURNING:</label>
-                            <input type="text" name="emr" class="datepicker white grey-text iput form-control" placeholder="yyyy-mn-dy" id="dates" data-startDate>
-                            <input type="text" name="emr" class="datepicker white grey-text iput form-control" placeholder="yyyy-mn-dy" id="dates" data-startDate>
-                            </div>
+                        <div class="form-group two">
+                            <label>DATES GOING/RETURNING:</label>
+                            <input type="text" class="white iput form-control input-field" Placeholder="  yyyy-mn-dy" id="dates" data-startDate>
+                            <input type="text" class="white iput form-control input-field" Placeholder="  yyyy-mn-dy" id="dates" data-startDate>
                         </div>
 
-                        <div class="input-field input-three">
-                            <label for="dates">SIZE OF PARTY:</label>
-                            <input type="number" class="white grey-text iput" placeholder=" # ">
+                        <div class="form-group three">
+                            <label>SIZE OF PARTY:</label>
+                            <input type="number" class="white iput input-field" Placeholder="  #" id="party">
                         </div>
 
-                        <div class="form-group">
-                            <input type="submit" name="r" class="btn orange btn-default" value="Let's Go!" data-submit>
-                            <input type="reset" name="r" class="btn orange btn-default" value="Reset" data-submit>
+                        <div class="form-group four">
+                            <input type="submit" class="btn orange btn-default" value="Let's Go!" id="btn-submit" data-submit>
+                            <input type="reset" class="btn orange btn-default" value="Reset" id="btn-reset">
                         </div>
                     </form>
                 </div>
