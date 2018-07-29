@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <!-- Materialize -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <!-- personal style file -->
@@ -68,8 +68,8 @@
 <!-- Section: slider-input form -->
 <section class="slider">
     <ul class="slides">
-        <li><img src="images/img01a.jpg"></li>
-        <li><img src="images/img02a.jpg"></li>
+        <li><img src="/images/img01a.jpg"></li>
+        <li><img src="/images/img02a.jpg"></li>
         <li><img src="images/img03a.jpg"></li>
         <li><img src="images/img04a.jpg"></li>
         <li><img src="images/img05a.jpg"></li>
@@ -78,33 +78,40 @@
         <li><img src="images/img08a.jpg"></li>
         <li><img src="images/img09a.jpg"></li>
     </ul>
-    <div class="callout-container">
-            <h3 class="callout-header">Where Do You Want To Stay?</h3>
 
-            <div class="input-field input-one">
-                <input type="text" class="white grey-text autocomplete iput places-box" placeholder="   Italy, Venice, Florence, etc..." data-cityName>
-            </div>
+    <div class="vertical-center">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <form id="input-form">
+                        <h2 class="company-name">Where Do You Want To Stay?</h2>
 
-            <div class="input-two">
-                <div class="input-field">
-                    <input type="text" class="datepicker white grey-text iput" placeholder=" yyyy-mn-dy" data-startDate>
-                </div>
-                <div class="input-field">
-                    <input type="text" class="datepicker white grey-text iput" placeholder=" yyyy-mn-dy" data-endDate>
+                        <div class="form-group one">
+                            <label>LOCATION:</label>
+                            <input type="text" class="white autocomplete iput form-control input-field" id="utilityname" Placeholder="  Italy, Venice, Florence, etc..." data-cityName>
+                        </div>
+
+                        <div class="form-group two">
+                            <label>DATES GOING/RETURNING:</label>
+                            <input type="text" class="white iput form-control input-field" Placeholder="  yyyy-mn-dy" id="dates" data-startDate>
+                            <input type="text" class="white iput form-control input-field" Placeholder="  yyyy-mn-dy" id="dates" data-startDate>
+                        </div>
+
+                        <div class="form-group three">
+                            <label>SIZE OF PARTY:</label>
+                            <input type="number" class="white iput input-field" Placeholder="  #" id="party">
+                        </div>
+
+                        <div class="form-group four">
+                            <input type="submit" class="btn orange btn-default" value="Let's Go!" id="btn-submit" data-submit>
+                            <input type="reset" class="btn orange btn-default" value="Reset" id="btn-reset">
+                        </div>
+                    </form>
                 </div>
             </div>
-        
-        <div class="input-field input-three">
-            <input type="number" class="white grey-text iput" placeholder="  # In Party">
-        </div>
-        
-        <div class="input-four">
-            <a href="" class="btn z-depth-2 waves-effect waves-light orange" data-submit>Let's Go</a>
-            <a href="" class="btn z-depth-2 waves-effect waves-light orange">Reset</a>
         </div>
     </div>
 </section>
-
 
 <!-- Section:  Search for places -->
 
@@ -231,8 +238,9 @@
 
 <!-- JQuery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<!-- Materialize -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+<!-- Materialize & Bootstrap -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 <!-- Google Maps -->
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5UbM4IbCBvcnvGdbdBZOOjkEEfxpNgYg" async defer></script>
