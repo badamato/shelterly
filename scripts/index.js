@@ -111,7 +111,7 @@ const sideNav = document.querySelector('.sidenav');
 M.Sidenav.init(sideNav,{});
 
 
-// Slider
+//Slider
 const slider = document.querySelector('.slider');
 M.Slider.init(slider, {
     indicators: false,
@@ -119,10 +119,6 @@ M.Slider.init(slider, {
     transition: 500,
     interval: 6000
 });
-
-//Material Boxed
-// const mb = document.querySelectorAll('.materialboxed');
-// M.Materialbox.init(mb, {});
 
 
 //Initialize autocomplete
@@ -141,7 +137,7 @@ M.Autocomplete.init(ac, {
 });
 
 
-// //Initialize datepicker
+//Initialize datepicker
 //   $(document).ready(function () {
 //     $('.datepicker').pickadate({
 //       closeOnSelect: true,
@@ -153,8 +149,6 @@ M.Autocomplete.init(ac, {
 //Initialize ScrollSpy (smooth scrolling)
 const ss = document.querySelectorAll('.scrollspy');
 M.ScrollSpy.init(ss, {});
-
-
 
 
 //MAP
