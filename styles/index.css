@@ -152,51 +152,42 @@ nav ul li a:hover {
     width: 650px;
     height: 650px;
     display: flex;
+    justify-content: space-between;
 }
 
-.map-card,
-.results-card {
-    width: 600px;
-    height: 600px;
-    padding: 2px;
-    display: flex;
+#map {
+    height: 100%;
 }
-
 
 
 /**********ABOUT-CONTACT SECTION**********/
 
 .section-contact {
     width: 100%;
-    margin: 5px 10px;
+    max-height: 80vh;
     padding: 0;
 }
 
-.section-icons .fa-4x {
-    margin: 10px 5px;
-    font-size: 2em;
-    color: orange;
+.section-contact form {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
 }
 
-.section-follow,
-.section-results {
-    height: 80px;
-}
-
-.materialboxed {
-    display: inline-block;
-}
-
-.section-icons img {
+.section-designers img {
     width: 140px;
     height: 140px;
 }
 
-.section-contact {
-    margin: 0 auto;
-    width: 40%;
+.section-designers .fa-4x {
+    margin: 10px 5px;
+    font-size: 2em;
+    color: orange;
 }
-
+.materialboxed {
+    display: inline-block;
+}
 
 
 /************MISC***************/
@@ -207,18 +198,17 @@ nav ul li a:hover {
     left: 0;
 }
 
-#map {
-    height: 100%;
-}
-
-.flow-text{
+.footer-text{
     font-size: 1.2em;
 }
 
 
 
 /****************MEDIA QUERIES***************/
-
-@media screen and (min-width: 360px){ 
-
+/*min-width: 320, 480, 768, 1024, 1200, 1600*/
+@media screen and (max-width: 320px){ 
+    .map-box,
+    .results-box {
+        flex: 1;
+    }
 }

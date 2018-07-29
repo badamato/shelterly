@@ -19,8 +19,6 @@
     <!-- personal style file -->
     <link rel="stylesheet" href="styles/index.css">
 </head>
-
-
 <body id="home" class="scrollspy">
 <span id="top"></span>
 
@@ -37,10 +35,10 @@
                     <a href="#home">Home</a>
                 </li>
                 <li>
-                    <a href="#results">Results</a>
+                    <a href="#about">About</a>
                 </li>
                 <li>
-                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
                 </li>
             </ul>
         </div>
@@ -55,10 +53,10 @@
             <a href="#home">Home</a>
         </li>
         <li>
-            <a href="#results">Results</a>
+            <a href="#about">About</a>
         </li>
         <li>
-            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
         </li>
     </ul>
     <!-- <a href="#" data-target="slide-out" class="sidenav-trigger button-collapse">
@@ -94,7 +92,7 @@
                 <label>DATES GOING/RETURNING:</label>
                 <div class="form-group formtwo">
                     <input type="text" class="white iput form-control input-field" Placeholder="  yyyy-mn-dy" id="dates" data-startDate>
-                    <input type="text" class="white iput form-control input-field" Placeholder="  yyyy-mn-dy" id="dates" data-startDate>
+                    <input type="text" class="white iput form-control input-field" Placeholder="  yyyy-mn-dy" id="dates" data-endDate>
                 </div>
 
                 <label>SIZE OF PARTY:</label>
@@ -122,24 +120,19 @@
 
 <section class="results-container">
     <div class="row">
-        <div class="col s12 m4 l2">
-            <div class="results-box card-panel blue-grey white-text" data-results>
-                <div class="results-card white grey-text">
-                </div>
-            </div>
+        <div class="col s12 m4">
+            <div class="results-box card-panel blue-grey white-text" data-results></div>
         </div>
-        <div class="col s12 m4 l2">
-            <div class="map-box card-panel grey lighten-3">
-                <div class="map-card white grey-text" data-map>
-                </div>
-            </div>
+        <div class="col s12 m4">
+            <div class="map-box card-panel grey lighten-3" data-map></div>
         </div>
     </div>
 </section>
 
 
+
 <!-- Section: Follow -->
-<section id="#about" class="section section-follow blue-grey darken-1 orange-text center scrollspy">
+<section class="section section-follow blue-grey darken-1 orange-text center scrollspy">
     <div class="row">
         <div class="col m4">
             <h2>MEET THE DESIGNERS</h2>
@@ -149,8 +142,9 @@
 
 
 
+
 <!-- Section: About -->
-<section class="section section-icons grey lighten-4 center">
+<section id="about" class="section section-designers grey lighten-4 center">
     <div class="container">
     <div class="row">
         <div class="col s12 m4">
@@ -192,44 +186,45 @@
 
 
 <!-- Section: Contact -->
+<span id="contact" ></span>
 <section class="section section-contact scrollspy">
-    <div class="row">
-        <form class="col s12 m4" action="//formspree.io/bethadamato@gmail.com" method="POST">
-            <div class="card-panel blue-grey darken-2">
-            <h5>Please fill out this form</h5>
-            <div class="input-field">
-                <input type="text" name="name" placeholder="Name">
-            </div>
-            <div class="input-field">
-                <input type="text" name="email" placeholder="Email">
-            </div>
-            <div class="input-field">
-                <input type="text" name="phone" placeholder="Phone">
-            </div>
-            <div class="input-field">
-                <textarea class="materialize-textarea" name="message" placeholder="Enter Message"></textarea>
-            </div>
-            <input type="submit" value="Submit" class="btn">
-            </div>
-        </form>
-    </div>
+    <form class="col s12 m4" action="//formspree.io/bethadamato@gmail.com" method="POST">
+        <div class="card-panel blue-grey darken-2">
+        <h5>Please fill out this form</h5>
+        <div class="input-field">
+            <input type="text" name="name" placeholder="Name">
+        </div>
+        <div class="input-field">
+            <input type="text" name="email" placeholder="Email">
+        </div>
+        <div class="input-field">
+            <input type="text" name="phone" placeholder="Phone">
+        </div>
+        <div class="input-field">
+            <textarea class="materialize-textarea" name="message" placeholder="Enter Message"></textarea>
+        </div>
+        <input type="submit" value="Submit" class="btn">
+        </div>
+    </form>
 </section>
 
 
 <!-- Section: Footer -->
 <footer class="section blue-grey darken-1 orange-text center">
-    <p class="flow-text">Shelterly &copy; 2018 developed by Bhisma Bakai, Beth D'Amato, Matt Freeman - DigitalCrafts </p>
+    <p class="footer-text">Shelterly &copy; 2018 developed by Bhisma Bakai, Beth D'Amato, Matt Freeman - DigitalCrafts </p>
 </footer>
 
 
 <!-- JQuery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 <!-- Materialize & Bootstrap -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 <!-- Google Maps -->
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5UbM4IbCBvcnvGdbdBZOOjkEEfxpNgYg" async defer></script>
+
 <!-- personal script file -->
 <script src="scripts/index.js"></script> 
 

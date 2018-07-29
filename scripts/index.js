@@ -1,17 +1,12 @@
-
-
-
-
 //Establish const variables for api searches
-var url1 = 'http://api.openweathermap.org/data/2.5/weather?q=';
+
 //url2 is currently set to atlanta coords
 var url2 = 'https://api.sandbox.amadeus.com/v1.2/hotels/search-circle?apikey=';
-//url3 currently has everything loaded in it, will need to be updated
-var url3 = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyD5UbM4IbCBvcnvGdbdBZOOjkEEfxpNgYg&callback=initMap';
+//includes key
+var url3 = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBELg3Rq-oCRS2ylSrWVD0WGFfHomxc7LQ&callback=initMap';
 
-var key1 = '8af75be6ad056fda7f74ba7bb0a3e7a1';
 var key2 = 'LMXWGlJ5iEiMnGPICR4nrPHFNFz81uBC';
-var key3 = 'AIzaSyD5UbM4IbCBvcnvGdbdBZOOjkEEfxpNgYg';
+var key3 = 'AIzaSyBELg3Rq-oCRS2ylSrWVD0WGFfHomxc7LQ';
 
 var submitButton = document.querySelector('[data-submit]');
 //Establish variables from input of form in html
@@ -100,12 +95,15 @@ function main() {
         })
 
 };
+
+//CLICK EVENT - ON SUBMIT
 submitButton.addEventListener('click', function (event) {
     event.preventDefault();
     return main();
 });
 
-//MAP
+
+//MAP RENDERING
 var map;
     function initMap(lat, lon) {
         map = new google.maps.Map(document.querySelector('[data-map]'), {
