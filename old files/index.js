@@ -1,29 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //Establish const variables for api searches
 var url1 = 'http://api.openweathermap.org/data/2.5/weather?q=';
 //url2 is currently set to atlanta coords
