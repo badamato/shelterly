@@ -2,28 +2,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //Establish const variables for api searches
 var url1 = 'http://api.openweathermap.org/data/2.5/weather?q=';
 //url2 is currently set to atlanta coords
@@ -44,19 +22,14 @@ var hotelName;
 var hotelAmenities;
 var hotelDescription;
 var hotelAddress;
+
 function main() {
-    // if(true){
-    //         // $('[data-cityName]').val('atlanta');
-    //         // $('[data-startDate]').val('2018-06-05');
-    //         // $('[data-endDate]').val('2018-06-05');
-    //         $('[data-cityName]').val('atlanta');
-    //         $('[data-startDate]').val('2018-06-05');
-    //         $('[data-endDate]').val('2018-06-05');
-    //     }
     var cityName = document.querySelector('[data-cityName]').value;
     var startDate = document.querySelector('[data-startDate]').value;
     var endDate = document.querySelector('[data-endDate]').value;
     var requestUrl = url1 + cityName + '&APPID=' + key1;
+
+
     //Utilize city input on Weather API to get long and latitude and store as a variable
     $.get(requestUrl, function (data) {
         console.log(data);
@@ -125,12 +98,21 @@ function main() {
             })
             
         })
-        //use address location to place pin on map
+
 };
 submitButton.addEventListener('click', function (event) {
     event.preventDefault();
     return main();
 });
+
+//MAP
+var map;
+    function initMap(lat, lon) {
+        map = new google.maps.Map(document.querySelector('[data-map]'), {
+        center: {lat: lat, lng: lon},
+        zoom: 8
+        });
+    };
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -178,13 +160,4 @@ M.Autocomplete.init(ac, {
 const ss = document.querySelectorAll('.scrollspy');
 M.ScrollSpy.init(ss, {});
 
-
-//MAP
-var map;
-      function initMap(lat, lon) {
-        map = new google.maps.Map(document.querySelector('[data-map]'), {
-          center: {lat: lat, lng: lon},
-          zoom: 8
-        });
-    };
 

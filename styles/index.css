@@ -38,6 +38,7 @@ html,body {
 .fa-bed {
     color: rgb(97, 125, 138);
     padding-right: 5px;
+    padding-left: 20px;
 }
 
 nav ul li a {
@@ -84,7 +85,7 @@ nav ul li a:hover {
     justify-content: center;
     position: absolute;
     z-index: 779;
-    top: 50px;
+    top: 30px;
     width: 100%;
 }
 
@@ -136,15 +137,27 @@ nav ul li a:hover {
 
 /**********RESULTS/MAP SECTION**********/
 
-.map-box {
-    width: 500px;
-    height: 500px;
+.results-container {
+    min-height: 80vh;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    top: 30px;
+    width: 100%;
+}
+
+.map-box,
+.results-box {
+    width: 650px;
+    height: 650px;
     display: flex;
 }
 
-.map-card {
-    width: 450px;
-    height: 450px;
+.map-card,
+.results-card {
+    width: 600px;
+    height: 600px;
     padding: 2px;
     display: flex;
 }

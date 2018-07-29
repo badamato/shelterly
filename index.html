@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Normalize -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-    <!-- Google and FontAwesome -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    <!-- Materialize -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <!-- personal style file -->
-    <link rel="stylesheet" href="styles/index.css">
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Shelterly</title>
+
+    <!-- Normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+    <!-- Materialize & Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- personal style file -->
+    <link rel="stylesheet" href="styles/index.css">
 </head>
+
+
 <body id="home" class="scrollspy">
 <span id="top"></span>
 
@@ -35,27 +37,28 @@
                     <a href="#home">Home</a>
                 </li>
                 <li>
-                    <a href="#search">Search</a>
+                    <a href="#results">Results</a>
                 </li>
                 <li>
-                    <a href="#contact">Contact</a>
+                    <a href="#about">About</a>
                 </li>
             </ul>
         </div>
     </nav>
 </div>
 
-<!-- Side nav bar slider -->
+
+<!-- Side nav bar slider - hidden -->
 <div class="hidden-nav">
     <ul class="sidenav" id="mobile-nav">
         <li>
-            <a href="#search">Search</a>
+            <a href="#home">Home</a>
+        </li>
+        <li>
+            <a href="#results">Results</a>
         </li>
         <li>
             <a href="#about">About</a>
-        </li>
-        <li>
-            <a href="#contact">Contact</a>
         </li>
     </ul>
     <!-- <a href="#" data-target="slide-out" class="sidenav-trigger button-collapse">
@@ -116,12 +119,12 @@
         </div>
     </div>
 </section>
+
 <section class="results-container">
     <div class="row">
         <div class="col s12 m4 l2">
-            <div class="results-box card-panel blue-grey white-text center" data-results>
-                <h5>Here are your search results:</h5>
-                <div class="results-container white grey-text">
+            <div class="results-box card-panel blue-grey white-text" data-results>
+                <div class="results-card white grey-text">
                 </div>
             </div>
         </div>
@@ -136,7 +139,7 @@
 
 
 <!-- Section: Follow -->
-<section id="follow" class="section section-follow blue-grey darken-1 orange-text center scrollspy">
+<section id="#about" class="section section-follow blue-grey darken-1 orange-text center scrollspy">
     <div class="row">
         <div class="col m4">
             <h2>MEET THE DESIGNERS</h2>
