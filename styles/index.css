@@ -14,6 +14,8 @@ html,body {
     overflow-x: hidden; 
 }
 
+
+/************NAVBAR***************/
 .navbar-fixed {
     position: fixed;
     overflow: hidden;
@@ -72,7 +74,7 @@ nav ul li a:hover {
 }
 
 
-/************CALLOUT***************/
+/************SLIDER & OVERLAY***************/
 
 .vertical-center {
     min-height: 100%;
@@ -92,7 +94,6 @@ nav ul li a:hover {
     text-align: center;
     background-color: rgba(237, 237, 237, 0.5);
     background-color: hsla(0, 0%, 93%, 0.5);
-    /* width: 600px; */
 }
 
 #input-form h2 {
@@ -132,19 +133,25 @@ nav ul li a:hover {
     font-size: 1em;
 }
 
-/************CALLOUT END***************/
 
-.map-container {
+/**********RESULTS/MAP SECTION**********/
+
+.map-box {
     width: 500px;
     height: 500px;
     display: flex;
 }
+
 .map-card {
     width: 450px;
     height: 450px;
     padding: 2px;
     display: flex;
 }
+
+
+
+/**********ABOUT-CONTACT SECTION**********/
 
 .section-contact {
     width: 100%;
@@ -177,6 +184,10 @@ nav ul li a:hover {
     width: 40%;
 }
 
+
+
+/************MISC***************/
+
 #top span {
     position: absolute;
     top: 0;
@@ -191,8 +202,9 @@ nav ul li a:hover {
     font-size: 1.2em;
 }
 
-/*********************MEDIA QUERIES********************/
 
+
+/****************MEDIA QUERIES***************/
 
 @media screen and (min-width: 360px){ 
 
