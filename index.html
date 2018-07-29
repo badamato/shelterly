@@ -80,34 +80,33 @@
     </ul>
 
     <div class="vertical-center">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-4 col-sm-4 col-xs-12">
-                    <form id="input-form">
-                        <h2 class="company-name">Where Do You Want To Stay?</h2>
+        <div class="row">
+            <div class="col-md-4 col-sm-4 col-xs-12">
+                <form id="input-form">
+                    <h2>Where Do You Want To Stay?</h2>
 
-                        <div class="form-group one">
-                            <label>LOCATION:</label>
-                            <input type="text" class="white autocomplete iput form-control input-field" id="utilityname" Placeholder="  Italy, Venice, Florence, etc..." data-cityName>
-                        </div>
+                    <div class="form-group formone">
+                        <label>LOCATION:</label>
+                        <input type="text" class="white autocomplete iput form-control input-field" id="utilityname" Placeholder="  Italy, Venice, Florence, etc..." data-cityName>
+                    </div>
+                    <label>DATES GOING/RETURNING:</label>
+                    <div class="form-group formtwo">
+                        <!-- <label>DATES GOING/RETURNING:</label> -->
+                        <input type="text" class="white iput form-control input-field" Placeholder="  yyyy-mn-dy" id="dates" data-startDate>
+                        <input type="text" class="white iput form-control input-field" Placeholder="  yyyy-mn-dy" id="dates" data-startDate>
+                    </div>
 
-                        <div class="form-group two">
-                            <label>DATES GOING/RETURNING:</label>
-                            <input type="text" class="white iput form-control input-field" Placeholder="  yyyy-mn-dy" id="dates" data-startDate>
-                            <input type="text" class="white iput form-control input-field" Placeholder="  yyyy-mn-dy" id="dates" data-startDate>
-                        </div>
+                    <label>SIZE OF PARTY:</label>
+                    <div class="form-group formthree">
+                        <!-- <label>SIZE OF PARTY:</label> -->
+                        <input type="number" class="white iput input-field" Placeholder="  #" id="party">
+                    </div>
 
-                        <div class="form-group three">
-                            <label>SIZE OF PARTY:</label>
-                            <input type="number" class="white iput input-field" Placeholder="  #" id="party">
-                        </div>
-
-                        <div class="form-group four">
-                            <input type="submit" class="btn orange btn-default" value="Let's Go!" id="btn-submit" data-submit>
-                            <input type="reset" class="btn orange btn-default" value="Reset" id="btn-reset">
-                        </div>
-                    </form>
-                </div>
+                    <div class="form-group formfour">
+                        <input type="submit" class="btn orange btn-default" value="Let's Go!" id="btn-submit" data-submit>
+                        <input type="reset" class="btn orange btn-default" value="Reset" id="btn-reset">
+                    </div>
+                </form>
             </div>
         </div>
     </div>
