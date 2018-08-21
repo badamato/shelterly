@@ -60,17 +60,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 ### FUTURE ADDITIONS
 
-If we had more time, we would...
 
-* Access more robust API's for full vacation packages - airfare, hotel, car rental.
-* Placement of listing pins on results map.
-* Clickable listing cards next to location/map pins that links user to full detail of specific listing.
-* "Bookability" for user to place reservation from site.
-* Additional site space for user and vendor to message each other.
-* Login validation to site.
+## Project Description 
 
 
 
 ## License 
-Copyright 2018 Matt Freeman, Beth D'Amato, Bhisma Bakhai
-
+Copyright 2018 Beth D'Amato
