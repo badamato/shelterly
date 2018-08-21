@@ -1,5 +1,5 @@
 # Shelterly Travel Application
-Updated Application (former group project)
+(updated application - former group project)
 
 <p align='center'>
     <img src='images/readme_imgs/one.png' alt='homepage'></img>
@@ -11,7 +11,7 @@ Updated Application (former group project)
 <br>
 
 ## Author
-* Beth D'Amato - [badamato](https://github.com/badamato)
+Beth D'Amato - [Beth D'Amato](https://github.com/badamato)
 
 <br>
 
@@ -21,7 +21,6 @@ Updated Application (former group project)
 * jQuery 3.3.1
 * Axios
 * HTML5/CSS3/Materialize
-
 * [Google Geocoding](https://openweathermap.org/) - Used location API to get coordinates
 * [Amadeus](https://api.sandbox.amadeus.com/v1.2/hotels/search-circle) - Amadeus Travel API
 * [Google Maps](https://maps.googleapis.com/maps/api/js?key=) - Google Maps API
@@ -60,10 +59,16 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 ### FUTURE ADDITIONS
 
+If we had more time, we would...
 
-## Project Description 
+* Access more robust API's for full vacation packages - airfare, hotel, car rental.
+* Placement of listing pins on results map.
+* Clickable listing cards next to location/map pins that links user to full detail of specific listing.
+* "Bookability" for user to place reservation from site.
+* Additional site space for user and vendor to message each other.
+* Login validation to site.
 
-
+<br>
 
 ## License 
 Copyright 2018 Beth D'Amato
