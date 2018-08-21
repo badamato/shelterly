@@ -101,8 +101,5 @@ function main() {
         })
         //use address location to place pin on map
 };
-submitButton.addEventListener('click', function (event) {
-    event.preventDefault();
-    return main();
-});
+
 

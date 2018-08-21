@@ -1,5 +1,5 @@
 //Google Geocode API
-
+'';
 // Amadeus API
 var url2 = 'https://api.sandbox.amadeus.com/v1.2/hotels/search-circle?apikey=';
 //Google Maps API - includes key

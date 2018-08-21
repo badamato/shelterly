@@ -12,6 +12,8 @@
 
 ## Author
 Beth D'Amato - [Beth D'Amato](https://github.com/badamato)
+Matt Freeman (original API coding) - [Matt Freeman](https://github.com/matthewfreeman821)
+
 
 <br>
 
