@@ -11,6 +11,8 @@ var key3 = 'AIzaSyBELg3Rq-oCRS2ylSrWVD0WGFfHomxc7LQ';
 
 var submitButton = document.querySelector('[data-submit]');
 //Establish variables from input of form in html
+var lat;
+var lon;
 
 var hotelName;
 var hotelAmenities;
@@ -20,31 +22,28 @@ var hotelAddress;
 function main() {
     var addressInput = document.querySelector('[data-addressCityState]').value;
     var requestUrl = url1 + addressInput + key1;
-
+    // console.log(requestUrl);
 
     $.get(requestUrl, function (data) {
         //log full response
-        console.log(data.results[0].geometry.location.lng);
-        // var lon = response.data.results[0].geometry.location.lng;
-        // var lat = response.data.results[0].geometry.location.lat;
-   
-
+        console.log(data);
 
         // var coordsData = [];
         // var keys = Object.keys(data);
         // keys.forEach(function (aKey) {
         //     var coordsInfo = data[aKey];
-        //     coordsData.push(coordsInfo);
-        //     //this pushes the data into the empty array
+        //     coordsData.push(coordsInfo);//this pushes the data into the empty array
         // });
         // console.log(keys);
         // console.log(coordsData);
+
         // coordsData.forEach(function (info) {
         //     lon = coordsData[0].lon;
         //     lat = coordsData[0].lat;
         // });
 
-
+        lat = data.results[0].geometry.location.lat;
+        lon = data.results[0].geometry.location.lng;
 
     }).then(function(coordinates){
         var startDate = document.querySelector('[data-startDate]').value;
