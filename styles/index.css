@@ -114,12 +114,11 @@ nav ul li a:hover {
 
 #btn-submit {
     margin-top: 10px;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 #btn-reset {
     margin-top: 10px;
-    margin-right: 10px;
 }
 
 #dates {
@@ -134,6 +133,10 @@ nav ul li a:hover {
     font-size: 1em;
 }
 
+#input-form .formone input,
+#input-form .formtwo input {
+    padding-left: 15px;
+}
 
 /**********RESULTS/MAP SECTION**********/
 
