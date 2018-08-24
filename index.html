@@ -20,7 +20,6 @@
     <link rel="stylesheet" href="styles/index.css">
 </head>
 <body id="home" class="scrollspy">
-<span id="top"></span>
 
 
 <!-- Top nav bar - fixed -->
@@ -28,7 +27,7 @@
     <nav class="white">
         <div class="nav-wrapper">
             <a href="#" class="company-name"><i class="fas fa-bed"></i>Shelterly</a>
-            <a href="#" data-target="mobile-nav" class="sidenav-trigger">
+            <a href="#" data-target="slide-out" class="sidenav-trigger">
                 <i class="fas fa-bars"></i></a>
             <ul class="right hide-on-med-and-down top-menu">
                 <li>
@@ -48,7 +47,7 @@
 
 <!-- Side nav bar slider - hidden -->
 <div class="hidden-nav">
-    <ul class="sidenav" id="mobile-nav">
+    <ul class="sidenav" id="slide-out">
         <li>
             <a href="#home">Home</a>
         </li>
@@ -58,11 +57,18 @@
         <li>
             <a href="#contact">Contact</a>
         </li>
+        <li>
+        <a href="#!" class="sidenav-close">
+            <i class="fa fa-window-close"></i>
+        </a>
+        </li>
     </ul>
-    <!-- <a href="#" data-target="slide-out" class="sidenav-trigger button-collapse">
-        <i class="material-icons">Menu</i>
-    </a> -->
 </div>
+
+
+
+
+
 
 
 
@@ -133,7 +139,7 @@
 
 
 <!-- Section: Meet the Designers -->
-<section class="section designers-bar blue-grey darken-1 orange-text center scrollspy">
+<section id="about" class="section designers-bar blue-grey darken-1 orange-text center scrollspy">
     <div class="row">
         <div class="col m4">
             <h2>MEET THE DESIGNERS</h2>
@@ -142,7 +148,7 @@
 </section>
 
 <!-- Section: About -->
-<section id="about" class="section section-designers grey lighten-4 center">
+<section class="section section-designers grey lighten-4 center">
     <div class="container">
     <div class="row design-row">
         <div class="col s12 m4">
@@ -172,7 +178,8 @@
 </section>
 
 <!-- Section: Contact Form -->
-<section class="section contact-bar blue-grey darken-1 orange-text center scrollspy">
+<span id="contact" class="scrollspy" ></span>
+<section class="section contact-bar blue-grey darken-1 orange-text center">
     <div class="row">
         <div class="col m4">
             <h2>CONTACT US</h2>
@@ -181,8 +188,7 @@
 </section>
 
 <!-- Section: Contact -->
-<span id="contact" ></span>
-<section class="section section-contact scrollspy">
+<section class="section section-contact">
     <form class="col s12 m4" action="//formspree.io/bethadamato@gmail.com" method="POST">
         <div class="card-panel blue-grey darken-2">
         <h5>Please fill out this form</h5>

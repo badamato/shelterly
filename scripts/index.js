@@ -131,7 +131,6 @@ M.Slider.init(slider, {
 });
 
 
-
 //Initialize ScrollSpy (smooth scrolling)
 const ss = document.querySelectorAll('.scrollspy');
 M.ScrollSpy.init(ss, {});
