@@ -172,7 +172,6 @@ nav ul li a:hover {
 .section-contact {
     padding-top: 60px;
     min-height: 75vh;
-  
 }
 
 .section-designers img {
@@ -191,12 +190,14 @@ nav ul li a:hover {
 }
 
 .design-row {
-    height: 50px;
+    display: block;
+    min-height: 525px;
 }
 
 .section-designers .card-panel {
     max-width: 500px;
-    margin-top: 50px;
+    margin-top: 100px;
+    max-height: 400px;
 }
 
 .section-contact form {
@@ -225,5 +226,10 @@ nav ul li a:hover {
     .map-box,
     .results-box {
         flex: 1;
+    }
+
+    .section-designers .card-panel {
+        max-width: 300px;
+        margin-top: 0;
     }
 }
