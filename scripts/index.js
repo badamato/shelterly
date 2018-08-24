@@ -131,28 +131,6 @@ M.Slider.init(slider, {
 });
 
 
-//Initialize autocomplete
-const ac = document.querySelector('.autocomplete');
-M.Autocomplete.init(ac, {
-    data: {
-        "Kansas City": null,
-        "Atlanta": null,
-        "Chicago": null,
-        "Dubuque": null,
-        "Miami": null,
-        "tbd": null
-    }
-});
-
-
-//Initialize datepicker
-//   $(document).ready(function () {
-//     $('.datepicker').pickadate({
-//       closeOnSelect: true,
-//       format: "dd/mm/yyyy"
-//     });
-//   });
-
 
 //Initialize ScrollSpy (smooth scrolling)
 const ss = document.querySelectorAll('.scrollspy');

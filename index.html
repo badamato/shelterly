@@ -85,9 +85,9 @@
             <form id="input-form" class="col l6 s4">
                 <h2>Where Do You Want To Stay?</h2>
 
-                <div class="form-group formone">
+                <div class="form-group formone autocomplete">
                     <label>LOCATION:</label>
-                    <input type="text" class="white autocomplete iput form-control input-field" id="utilityname" autocomplete=on placeholder="Enter Address City & State" data-addressCityState>
+                    <input type="text" class="white iput form-control input-field" id="autocomplete" onFocus="geolocate()" placeholder="e.g.,  100 Main Street, Boston MA" data-addressCityState>
                 </div>
                 <label>DATES GOING/RETURNING:</label>
                 <div class="form-group formtwo">
@@ -121,7 +121,7 @@
 <section class="results-container">
     <div class="row">
         <div class="col s12 m4">
-            <div class="results-box card-panel blue-grey white-text" data-results></div>
+            <div id="dataresults" class="results-box card-panel blue-grey white-text" data-results></div>
         </div>
         <div class="col s12 m4">
             <div id="map" class="map-box card-panel grey lighten-3" data-map></div>
@@ -152,9 +152,9 @@
                 <img class="materialboxed circle" src="images/bio/bd.jpg">
                 <h4>Beth D'Amato</h4>
                 <p>Application Reconstruction & Functionality</p>
-                <a href="https://github.com/badamato" class="black-text">
+                <a href="https://github.com/badamato" class="black-text" target="_blank" rel="noopener noreferrer">
                     <i class="fab fa-github fa-4x"></i></a>
-                <a href="https://www.linkedin.com/in/badamato" class="black-text">
+                <a href="https://www.linkedin.com/in/badamato" class="black-text" target="_blank" rel="noopener noreferrer">
                     <i class="fab fa-linkedin fa-4x"></i></a>
             </div>
         </div>
@@ -163,9 +163,9 @@
                 <img class="materialboxed circle" src="images/bio/mf.jpg">
                 <h4>Matt Freeman</h4>
                 <p>(original API & jQuery code)</p>
-                <a href="https://github.com/matthewfreeman821" class="black-text">
+                <a href="https://github.com/matthewfreeman821" class="black-text" target="_blank" rel="noopener noreferrer">
                     <i class="fab fa-github fa-4x"></i></a>
-                <a href="https://www.linkedin.com/in/matthewfreeman821" class="black-text">
+                <a href="https://www.linkedin.com/in/matthewfreeman821" class="black-text" target="_blank" rel="noopener noreferrer">
                     <i class="fab fa-linkedin fa-4x"></i></a>
             </div>
         </div>
