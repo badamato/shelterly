@@ -166,8 +166,8 @@ nav ul li a:hover {
 /**********ABOUT-CONTACT SECTION**********/
 
 .section-designers {
-    margin: 50px;
-    padding-top: 40px;
+    margin: 20px;
+    padding-top: 20px;
 }
 
 .section-designers img {
@@ -185,6 +185,15 @@ nav ul li a:hover {
     display: inline-block;
 }
 
+.design-row {
+    padding-top: 60px;
+}
+
+.design-row,
+.section-contact {
+    min-height: 500px;
+}
+
 .section-contact {
     width: 100%;
     max-height: 80vh;
@@ -194,10 +203,9 @@ nav ul li a:hover {
 .section-contact form {
     width: 60%;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 100px;
     margin-bottom: 30px;
 }
-
 
 /************MISC***************/
 
@@ -215,6 +223,12 @@ nav ul li a:hover {
 
 .footer-text{
     font-size: 1.2em;
+}
+
+.results-bar,
+.designers-bar,
+.contact-bar {
+    padding-top: 40px;
 }
 
 
