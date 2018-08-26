@@ -145,31 +145,47 @@ nav ul li a:hover {
 
 /**********RESULTS/MAP SECTION**********/
 
-.results-container .container {
+.results-container {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+}
+
+.results-container .row {
     display: flex;
     padding: 20px;
-    justify-content: space-evenly;
+    min-height: 90vh;
     width: 90%;
-    height: 90%;
     box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.2),
     -30px 0px 40px rgba(0, 0, 0, 0.2);
 }
 
+.results-container .card-panel {
+    width: 50%;
+    margin: 0 auto;
+    border: 2px solid red;
+}
+
+#dataresults,
+#map {
+    width: 600px;
+    border: 2px solid purple;
+}
+
 .results-box,
 .map-box {
-    height: 100%;
-    width: 100%;
+    height: 95%;
+    border: 2px solid yellow;
 }
 
 
 /**********ABOUT-CONTACT SECTION**********/
 
-.results-container,
 .section-designers,
 .section-contact {
     padding:  60px 0 40px 0;
     min-height: 75%;
-    width: 100%;
 }
 
 .section-designers img {
@@ -210,11 +226,12 @@ nav ul li a:hover {
 .designers-bar,
 .contact-bar {
     height: 90px;
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
 .footer-text{
     font-size: 1.2em;
+    padding-top: 10px;
 }
 
 
@@ -224,6 +241,11 @@ nav ul li a:hover {
     .section-designers .card-panel {
         max-width: 300px;
         margin-top: 0;
+    }
+
+    #dataresults,
+    #map {
+    width: 300px;
     }
 }
 
