@@ -148,17 +148,22 @@ nav ul li a:hover {
 .results-container {
     display: flex;
     justify-content: center;
-    height: auto;
+    /* height: auto; */
     width: 100%;
 }
 
 .results-container .row {
     display: flex;
     padding: 20px;
-    min-height: 130vh;
+    min-height: 90vh;
     width: 90%;
     box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.2),
     -30px 0px 40px rgba(0, 0, 0, 0.2);
+}
+
+#dataresults {
+    overflow:scroll;
+    overflow-x:hidden;
 }
 
 
@@ -166,7 +171,7 @@ nav ul li a:hover {
 #map {
     margin: 0 auto;
     width: 600px;
-    height: 95%;
+    height: 90%;
 }
 
 
@@ -236,7 +241,7 @@ nav ul li a:hover {
     }
 
     .results-container {
-        height: 200vh;
+        height: 120vh;
     }
 
     .results-box {
@@ -244,7 +249,7 @@ nav ul li a:hover {
     }
 
     #map {
-        height: 100vh;
+        height: 40vh;
     }
 
 }
