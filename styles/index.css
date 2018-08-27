@@ -148,7 +148,7 @@ nav ul li a:hover {
 .results-container {
     display: flex;
     justify-content: center;
-    /* height: auto; */
+    height: auto;
     width: 100%;
 }
 
@@ -171,7 +171,7 @@ nav ul li a:hover {
 #map {
     margin: 0 auto;
     width: 600px;
-    height: 90%;
+    height: 100%;
 }
 
 
@@ -250,6 +250,10 @@ nav ul li a:hover {
 
     #map {
         height: 40vh;
+    }
+
+    #dates {
+        font-size: small;
     }
 
 }

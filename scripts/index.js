@@ -28,20 +28,6 @@ function main() {
         //log full response
         console.log(data);
 
-        // var coordsData = [];
-        // var keys = Object.keys(data);
-        // keys.forEach(function (aKey) {
-        //     var coordsInfo = data[aKey];
-        //     coordsData.push(coordsInfo);//this pushes the data into the empty array
-        // });
-        // console.log(keys);
-        // console.log(coordsData);
-
-        // coordsData.forEach(function (info) {
-        //     lon = coordsData[0].lon;
-        //     lat = coordsData[0].lat;
-        // });
-
         lat = data.results[0].geometry.location.lat;
         lon = data.results[0].geometry.location.lng;
 
@@ -111,8 +97,17 @@ var map;
     function initMap(lat, lon) {
         map = new google.maps.Map(document.querySelector('[data-map]'), {
         center: {lat: lat, lng: lon},
-        zoom: 8
+        zoom: 8,
         });
+
+        var marker = new google.maps.Marker({
+            position: center,
+            map: map
+        });
+        // var locations = hotelData.hotelAddress;
+        // console.log(locations);
+
+
     };
 
 
