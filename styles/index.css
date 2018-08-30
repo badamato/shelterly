@@ -259,10 +259,6 @@ nav ul li a:hover {
 }
 
 @media screen and (min-width: 1300px){ 
-
-    .vertical-center {
-        min-height: 90vh;
-    }
     
     .results-container {
         display: flex;
@@ -270,20 +266,19 @@ nav ul li a:hover {
     }
     
     .results-container .row {
-        background-color: pink;
-        padding: 20px 20px 0 50px;
-        height: 300px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     
     #dataresults {
         width: 800px;
-        height: 75vh;
+        height: 78vh;
     }
 
     #map {
-        margin-left: 180px;
+        margin-left: 140px;
         width: 600px;
-        height: 75vh;
+        height: 70vh;
     }
 
     .section-designers {
@@ -297,6 +292,15 @@ nav ul li a:hover {
 
     .section-contact form {
         padding-top: 60px;
+    }
+
+    .slider {
+        height: 100%;
+    }
+
+    .vertical-center {
+        min-height: 81vh;
+        position: absolute;
     }
 
 }
