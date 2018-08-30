@@ -50,6 +50,7 @@ function main() {
             });
             console.log(keys);
             console.log(hotelData);
+
             initMap(lat, lon);
             //loop through data from amadeus and place in vars
             hotelData.forEach(function (info) {
@@ -77,12 +78,11 @@ function main() {
                     listOfHotels.appendTo('[data-results]');//no clue why this works
                 };
             });
+
+            setResultsMarkers();
         })
-    })
-
-
-};
-
+    });
+}
 
 
 submitButton.addEventListener('click', function (event) {
@@ -97,19 +97,41 @@ var map;
     function initMap(lat, lon) {
         map = new google.maps.Map(document.querySelector('[data-map]'), {
         center: {lat: lat, lng: lon},
-        zoom: 8,
+        zoom: 9,
         });
-
-        var marker = new google.maps.Marker({
-            position: center,
-            map: map
-        });
-        // var locations = hotelData.hotelAddress;
-        // console.log(locations);
-
-
     };
 
+//MARKERS
+
+function setResultsMarkers(locations) {
+
+    var locations = hotelData[i].location(['latitude'],['longitude']);
+    console.log(locations);
+
+    var infowindow =  new google.maps.InfoWindow({});
+
+    var marker, count;
+
+    for (count = 0; count < locations.length; count++) {
+        marker = new google.maps.Marker({
+            position: new google.maps.LatLng(locations[count][1], locations[count][2]),
+            map: map,
+            title: locations[count][0],
+            animation: google.maps.Animation.DROP
+        });
+
+        google.maps.event.addListener(marker, 'click', (function (marker, count) {
+                return function () {
+                infowindow.setContent(locations[count][0]);
+                infowindow.open(map, marker);
+                }
+        
+        })
+        
+        (marker, count));
+
+    }
+}
 
 //Initialize side nav
 const sideNav = document.querySelector('.sidenav');

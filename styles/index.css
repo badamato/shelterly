@@ -257,3 +257,46 @@ nav ul li a:hover {
     }
 
 }
+
+@media screen and (min-width: 1300px){ 
+
+    .vertical-center {
+        min-height: 90vh;
+    }
+    
+    .results-container {
+        display: flex;
+        height: auto;
+    }
+    
+    .results-container .row {
+        background-color: pink;
+        padding: 20px 20px 0 50px;
+        height: 300px;
+    }
+    
+    #dataresults {
+        width: 800px;
+        height: 75vh;
+    }
+
+    #map {
+        margin-left: 180px;
+        width: 600px;
+        height: 75vh;
+    }
+
+    .section-designers {
+        padding:  120px 0 40px 0;
+        height: 80%;
+    }
+
+    .section-contact {
+        height: 75vh;
+    }
+
+    .section-contact form {
+        padding-top: 60px;
+    }
+
+}
