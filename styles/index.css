@@ -258,7 +258,7 @@ nav ul li a:hover {
 
 }
 
-@media screen and (min-width: 1300px){ 
+@media screen and (min-width: 1325px){ 
     
     .results-container {
         display: flex;
