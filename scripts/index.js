@@ -3,11 +3,11 @@ var url1 = 'https://maps.googleapis.com/maps/api/geocode/json?address=';
 // Amadeus API
 var url2 = 'https://api.sandbox.amadeus.com/v1.2/hotels/search-circle?apikey=';
 //Google Maps API - includes key
-var url3 = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBELg3Rq-oCRS2ylSrWVD0WGFfHomxc7LQ&callback=initMap';
+var url3 = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCDOPcTmr99iuKAaytzvfyseJc5oQp0H_E';
 
-var key1 = 'AIzaSyBELg3Rq-oCRS2ylSrWVD0WGFfHomxc7LQ';
-var key2 = 'n2xfdNXqIFJDGbTMVGbzqjbMDmJ3rY7g';
-var key3 = 'AIzaSyBELg3Rq-oCRS2ylSrWVD0WGFfHomxc7LQ';
+var key1 = 'AIzaSyCDOPcTmr99iuKAaytzvfyseJc5oQp0H_E';
+var key2 = 'OtgbOn0SGnzxeZ97lO270dpd7tVYX0ey';
+var key3 = 'AIzaSyCDOPcTmr99iuKAaytzvfyseJc5oQp0H_E';
 
 var submitButton = document.querySelector('[data-submit]');
 //Establish variables from input of form in html
@@ -79,7 +79,7 @@ function main() {
                 };
             });
 
-            setResultsMarkers();
+            // setResultsMarkers();
         })
     });
 }
@@ -99,39 +99,40 @@ var map;
         center: {lat: lat, lng: lon},
         zoom: 9,
         });
+        
     };
 
 //MARKERS
+// function setResultsMarkers(locations) {
 
-function setResultsMarkers(locations) {
+//     var locations = hotelData[i].location(['latitude'],['longitude']);
+//      MAY LOOK LIKE THIS hotelData[0][i].location...
+//     console.log(locations);
 
-    var locations = hotelData[i].location(['latitude'],['longitude']);
-    console.log(locations);
+//     var infowindow =  new google.maps.InfoWindow({});
 
-    var infowindow =  new google.maps.InfoWindow({});
+//     var marker, count;
 
-    var marker, count;
+//     for (count = 0; count < locations.length; count++) {
+//         marker = new google.maps.Marker({
+//             position: new google.maps.LatLng(locations[count][1], locations[count][2]),
+//             map: map,
+//             title: locations[count][0],
+//             animation: google.maps.Animation.DROP
+//         });
 
-    for (count = 0; count < locations.length; count++) {
-        marker = new google.maps.Marker({
-            position: new google.maps.LatLng(locations[count][1], locations[count][2]),
-            map: map,
-            title: locations[count][0],
-            animation: google.maps.Animation.DROP
-        });
-
-        google.maps.event.addListener(marker, 'click', (function (marker, count) {
-                return function () {
-                infowindow.setContent(locations[count][0]);
-                infowindow.open(map, marker);
-                }
+//         google.maps.event.addListener(marker, 'click', (function (marker, count) {
+//                 return function () {
+//                 infowindow.setContent(locations[count][0]);
+//                 infowindow.open(map, marker);
+//                 }
         
-        })
+//         })
         
-        (marker, count));
+//         (marker, count));
 
-    }
-}
+//     }
+// }
 
 //Initialize side nav
 const sideNav = document.querySelector('.sidenav');
